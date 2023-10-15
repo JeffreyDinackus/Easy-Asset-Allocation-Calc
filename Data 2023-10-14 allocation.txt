@@ -1,0 +1,25 @@
+2023-10-14vtsax
+cash
+gold
+tips10.0
+20.0
+30.0
+40.01.0
+2.0
+3.0
+4.02023-10-14Assets: VTSAX
+Cash
+goldPercentage values of assets: 99.50248756218906
+0.1990049751243781
+0.2985074626865672Gross values of assets: 1000.0
+2.0
+3.02023-10-14Assets: vtsax
+3
+2
+45Percentage values of assets: 25.0
+16.666666666666664
+25.0
+33.33333333333333Gross values of assets: 3.0
+2.0
+3.0
+4.0
