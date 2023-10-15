@@ -43,7 +43,7 @@ print(assets, "\n", asset_values)
 
 
 
-export = input("Do you want to save your data to a file? 'Y' is yes, any other value for no")
+export = input("Do you want to save your data to a file? 'Y' is yes, any other value for no ")
 
 # add file saving of data with date
 date = datetime.today().strftime('%Y-%m-%d')
