@@ -49,19 +49,35 @@ export = input("Do you want to save your data to a file? 'Y' is yes, any other v
 date = datetime.today().strftime('%Y-%m-%d')
 
 
+asset_values_str = [str(value) for value in asset_values]
+gross_str = [str(value) for value in gross]
+
+assets_str = [str(value) for value in assets]
+
+assets_values_final = ' '.join(asset_values_str)
+gross_final = ' '.join(gross_str)
+assets_final = ' '.join(assets_str)
+
+
+
 if export.lower() == 'y':
   print("x")
   with open("Data {} allocation.txt".format(date), "a") as file:
     file.write(date)
+    file.write("\n")
     file.write("Assets: ")
-
-    file.write('\n'.join(str(i) for i in assets))
+    file.write("\n")
+    file.write(assets_final)
+    file.write("\n")
     file.write("Percentage values of assets: ")
-
-    file.write('\n'.join(str(i) for i in asset_values))
+    file.write("\n")
+    file.write(assets_values_final)
+    file.write("\n")
     file.write("Gross values of assets: ")
-    file.write('\n'.join(str(i) for i in gross))
-    file.write("total value of portfolio: {}".format(total))
+    file.write("\n")
+    file.write(gross_final)
+    file.write("\n")
+    file.write("total value of portfolio: {}".format(total) + "\n")
     
     # close the file
     file.close()

@@ -1,0 +1,8 @@
+2023-10-15
+Assets: 
+SPY VTI Cash Savings
+Percentage values of assets: 
+8.19672131147541 81.9672131147541 3.278688524590164 6.557377049180328
+Gross values of assets: 
+5000.0 50000.0 2000.0 4000.0
+total value of portfolio: 61000.0
