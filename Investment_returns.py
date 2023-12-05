@@ -1,5 +1,7 @@
 import tkinter as tk
 
+# this script doesn't work
+
 def calculate():
     try:
         principal = float(principal_entry.get())
@@ -7,7 +9,8 @@ def calculate():
         time = float(time_entry.get())
         contributions = float(contributions_entry.get())
 
-        result = principal* (1+rate/12)**(12 *time)
+        # result = principal* (1+rate/12)**(12 *time)
+        # result = principal * (1 + rate/(100*12))**(12*time)+((contributions*((1+rate/(100*12))**12*time)-1)/rate/(100*12))
         result_label.config(text=f"Final Amount: {round(result, 2)}")
     except ValueError:
         result_label.config(text="Please enter valid numbers")
