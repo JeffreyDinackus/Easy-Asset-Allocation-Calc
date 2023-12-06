@@ -53,5 +53,11 @@ calculate_button.pack()
 result_label = tk.Label(root, text="")
 result_label.pack()
 
+formula = tk.Label(root, text="Formula: while i < time:
+            principal = (contributions * 12 + principal) * (1 + rate / 100)
+            i+=1
+            print(principal)")")
+formula.pack()
+
 # Run the main loop
 root.mainloop()
