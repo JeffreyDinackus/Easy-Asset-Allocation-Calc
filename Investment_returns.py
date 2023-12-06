@@ -9,10 +9,12 @@ def calculate():
         time = float(time_entry.get())
         contributions = float(contributions_entry.get())
         i = 0
+        
         while i < time:
-            contributions = (contributions * 12 + principal) * (rate / 100)
+            principal = (contributions * 12 + principal) * (1 + rate / 100)
             i+=1
-        result = contributions
+            print(principal)
+        result = principal
         result_label.config(text=f"Final Amount: {round(result, 2)}")
     except ValueError:
         result_label.config(text="Please enter valid numbers")
