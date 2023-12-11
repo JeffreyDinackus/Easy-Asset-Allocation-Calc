@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# this script doesn't work
+# this script works
 
 def calculate():
     try:
