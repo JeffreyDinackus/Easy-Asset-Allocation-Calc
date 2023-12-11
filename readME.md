@@ -31,4 +31,4 @@ python3 calculator.py
 
 Follow prompts
 
-Investment return calc is broken
+Investment return calc is working 
