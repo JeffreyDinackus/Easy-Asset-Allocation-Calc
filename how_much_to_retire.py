@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# this script is broken 
+# I think this script works but check your numbers
 
 def calculate():
     try:
@@ -9,8 +9,13 @@ def calculate():
         time = float(time_entry.get())
         retirement_income = float(retirement_income_entry.get())
         
-        # result = net_worth + retirement_income * time - retirement_expenses * time 
+        result = net_worth
+        i = 0
+        while i < time:
+            
 
+          result = result - retirement_expenses + retirement_income
+          i+=1
         result_label.config(text=f"Final Amount: {round(result, 2)}")
 
 
@@ -52,12 +57,12 @@ calculate_button.pack()
 result_label = tk.Label(root, text="")
 result_label.pack()
 
-formula = tk.Label(root, text='''Formula: 
-        while i < time:
-            net_worth = (retirement_income * 12 + net_worth) * (1 + rate / 100)
-            i+=1
-            print(net_worth)")''')
-formula.pack()
+# formula = tk.Label(root, text='''Formula: 
+#         while i < time:
+#             net_worth = (retirement_income * 12 + net_worth) * (1 + rate / 100)
+#             i+=1
+#             print(net_worth)")''')
+# formula.pack()
 
 # Run the main loop
 root.mainloop()
